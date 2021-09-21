@@ -1,0 +1,135 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 2,
+    "pending": 0,
+    "failures": 4,
+    "start": "2021-09-21T22:23:01.149Z",
+    "end": "2021-09-21T22:23:01.212Z",
+    "duration": 63
+  },
+  "tests": [
+    {
+      "title": "should use the componentDidMount lifecycle method to fetchCats",
+      "fullTitle": "<App/> should use the componentDidMount lifecycle method to fetchCats",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot stub non-existent own property componentDidMount\n    at Sandbox.stub (node_modules/sinon/lib/sinon/sandbox.js:287:19)\n    at Context.<anonymous> (test/app-component-test.js:22:9)\n    at processImmediate (internal/timers.js:458:21)",
+        "message": "Cannot stub non-existent own property componentDidMount"
+      }
+    },
+    {
+      "title": "uses redux and thunk to create an action object with type of \"ADD_CATS\" and a payload of cat images",
+      "fullTitle": "async actions uses redux and thunk to create an action object with type of \"ADD_CATS\" and a payload of cat images",
+      "duration": 4,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: actions.fetchCats is not a function\n    at _callee$ (test/cat-actions-test.js:37:34)\n    at tryCatch (node_modules/babel-polyfill/node_modules/regenerator-runtime/runtime.js:65:40)\n    at Generator.invoke [as _invoke] (node_modules/babel-polyfill/node_modules/regenerator-runtime/runtime.js:303:22)\n    at Generator.prototype.<computed> [as next] (node_modules/babel-polyfill/node_modules/regenerator-runtime/runtime.js:117:21)\n    at step (test/cat-actions-test.js:29:191)\n    at /Users/travisfox/Flatiron/code/React/asynchronousRedux/redux-thunk-lab/test/cat-actions-test.js:29:437\n    at new Promise (<anonymous>)\n    at Context.<anonymous> (test/cat-actions-test.js:29:99)\n    at processImmediate (internal/timers.js:458:21)",
+        "message": "actions.fetchCats is not a function"
+      }
+    },
+    {
+      "title": "should display the cat pics wrapped in <img> tags",
+      "fullTitle": "<CatList/> should display the cat pics wrapped in <img> tags",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Invariant Violation: ReactShallowRenderer render(): Shallow rendering works only with custom components, but the provided element type was `object`.\n    at invariant (node_modules/fbjs/lib/invariant.js:42:15)\n    at ReactShallowRenderer.render (node_modules/react-test-renderer/cjs/react-test-renderer-shallow.development.js:115:78)\n    at /Users/travisfox/Flatiron/code/React/asynchronousRedux/redux-thunk-lab/node_modules/enzyme-adapter-react-16/build/ReactSixteenAdapter.js:287:35\n    at withSetStateAllowed (node_modules/enzyme-adapter-utils/build/Utils.js:103:16)\n    at Object.render (node_modules/enzyme-adapter-react-16/build/ReactSixteenAdapter.js:286:68)\n    at new ShallowWrapper (node_modules/enzyme/build/ShallowWrapper.js:119:22)\n    at shallow (node_modules/enzyme/build/shallow.js:19:10)\n    at Context.<anonymous> (test/cat-list-test.js:14:21)\n    at processImmediate (internal/timers.js:458:21)",
+        "message": "ReactShallowRenderer render(): Shallow rendering works only with custom components, but the provided element type was `object`.",
+        "name": "Invariant Violation",
+        "framesToPop": 1
+      }
+    },
+    {
+      "title": "should have props catPics",
+      "fullTitle": "<CatList/> should have props catPics",
+      "duration": 11,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Invariant Violation: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `WrapperComponent`.\n    at invariant (node_modules/fbjs/lib/invariant.js:42:15)\n    at getFiberTagFromObjectType (node_modules/react-dom/cjs/react-dom.development.js:9767:9)\n    at createFiberFromElement (node_modules/react-dom/cjs/react-dom.development.js:9727:20)\n    at reconcileSingleElement (node_modules/react-dom/cjs/react-dom.development.js:12588:23)\n    at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:12645:35)\n    at reconcileChildrenAtExpirationTime (node_modules/react-dom/cjs/react-dom.development.js:13016:28)\n    at finishClassComponent (node_modules/react-dom/cjs/react-dom.development.js:13213:3)\n    at updateClassComponent (node_modules/react-dom/cjs/react-dom.development.js:13156:10)\n    at beginWork (node_modules/react-dom/cjs/react-dom.development.js:13825:14)\n    at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:15864:12)\n    at workLoop (node_modules/react-dom/cjs/react-dom.development.js:15903:24)\n    at renderRoot (node_modules/react-dom/cjs/react-dom.development.js:15943:7)\n    at performWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:16561:22)\n    at performWork (node_modules/react-dom/cjs/react-dom.development.js:16483:7)\n    at performSyncWork (node_modules/react-dom/cjs/react-dom.development.js:16455:3)\n    at requestWork (node_modules/react-dom/cjs/react-dom.development.js:16355:5)\n    at scheduleWork$1 (node_modules/react-dom/cjs/react-dom.development.js:16219:11)\n    at scheduleRootUpdate (node_modules/react-dom/cjs/react-dom.development.js:16786:3)\n    at updateContainerAtExpirationTime (node_modules/react-dom/cjs/react-dom.development.js:16813:10)\n    at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:16840:10)\n    at ReactRoot.render (node_modules/react-dom/cjs/react-dom.development.js:17123:3)\n    at /Users/travisfox/Flatiron/code/React/asynchronousRedux/redux-thunk-lab/node_modules/react-dom/cjs/react-dom.development.js:17263:14\n    at unbatchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:16680:10)\n    at legacyRenderSubtreeIntoContainer (node_modules/react-dom/cjs/react-dom.development.js:17259:5)\n    at Object.render (node_modules/react-dom/cjs/react-dom.development.js:17318:12)\n    at Object.render (node_modules/enzyme-adapter-react-16/build/ReactSixteenAdapter.js:218:50)\n    at new ReactWrapper (node_modules/enzyme/build/ReactWrapper.js:98:16)\n    at mount (node_modules/enzyme/build/mount.js:19:10)\n    at Context.<anonymous> (test/cat-list-test.js:19:21)\n    at processImmediate (internal/timers.js:458:21)",
+        "message": "Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `WrapperComponent`.",
+        "name": "Invariant Violation",
+        "framesToPop": 1
+      }
+    },
+    {
+      "title": "should return the initial state",
+      "fullTitle": "cats reducer should return the initial state",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should handle the ADD_CATS action",
+      "fullTitle": "cats reducer should handle the ADD_CATS action",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "should use the componentDidMount lifecycle method to fetchCats",
+      "fullTitle": "<App/> should use the componentDidMount lifecycle method to fetchCats",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot stub non-existent own property componentDidMount\n    at Sandbox.stub (node_modules/sinon/lib/sinon/sandbox.js:287:19)\n    at Context.<anonymous> (test/app-component-test.js:22:9)\n    at processImmediate (internal/timers.js:458:21)",
+        "message": "Cannot stub non-existent own property componentDidMount"
+      }
+    },
+    {
+      "title": "uses redux and thunk to create an action object with type of \"ADD_CATS\" and a payload of cat images",
+      "fullTitle": "async actions uses redux and thunk to create an action object with type of \"ADD_CATS\" and a payload of cat images",
+      "duration": 4,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: actions.fetchCats is not a function\n    at _callee$ (test/cat-actions-test.js:37:34)\n    at tryCatch (node_modules/babel-polyfill/node_modules/regenerator-runtime/runtime.js:65:40)\n    at Generator.invoke [as _invoke] (node_modules/babel-polyfill/node_modules/regenerator-runtime/runtime.js:303:22)\n    at Generator.prototype.<computed> [as next] (node_modules/babel-polyfill/node_modules/regenerator-runtime/runtime.js:117:21)\n    at step (test/cat-actions-test.js:29:191)\n    at /Users/travisfox/Flatiron/code/React/asynchronousRedux/redux-thunk-lab/test/cat-actions-test.js:29:437\n    at new Promise (<anonymous>)\n    at Context.<anonymous> (test/cat-actions-test.js:29:99)\n    at processImmediate (internal/timers.js:458:21)",
+        "message": "actions.fetchCats is not a function"
+      }
+    },
+    {
+      "title": "should display the cat pics wrapped in <img> tags",
+      "fullTitle": "<CatList/> should display the cat pics wrapped in <img> tags",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Invariant Violation: ReactShallowRenderer render(): Shallow rendering works only with custom components, but the provided element type was `object`.\n    at invariant (node_modules/fbjs/lib/invariant.js:42:15)\n    at ReactShallowRenderer.render (node_modules/react-test-renderer/cjs/react-test-renderer-shallow.development.js:115:78)\n    at /Users/travisfox/Flatiron/code/React/asynchronousRedux/redux-thunk-lab/node_modules/enzyme-adapter-react-16/build/ReactSixteenAdapter.js:287:35\n    at withSetStateAllowed (node_modules/enzyme-adapter-utils/build/Utils.js:103:16)\n    at Object.render (node_modules/enzyme-adapter-react-16/build/ReactSixteenAdapter.js:286:68)\n    at new ShallowWrapper (node_modules/enzyme/build/ShallowWrapper.js:119:22)\n    at shallow (node_modules/enzyme/build/shallow.js:19:10)\n    at Context.<anonymous> (test/cat-list-test.js:14:21)\n    at processImmediate (internal/timers.js:458:21)",
+        "message": "ReactShallowRenderer render(): Shallow rendering works only with custom components, but the provided element type was `object`.",
+        "name": "Invariant Violation",
+        "framesToPop": 1
+      }
+    },
+    {
+      "title": "should have props catPics",
+      "fullTitle": "<CatList/> should have props catPics",
+      "duration": 11,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Invariant Violation: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `WrapperComponent`.\n    at invariant (node_modules/fbjs/lib/invariant.js:42:15)\n    at getFiberTagFromObjectType (node_modules/react-dom/cjs/react-dom.development.js:9767:9)\n    at createFiberFromElement (node_modules/react-dom/cjs/react-dom.development.js:9727:20)\n    at reconcileSingleElement (node_modules/react-dom/cjs/react-dom.development.js:12588:23)\n    at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:12645:35)\n    at reconcileChildrenAtExpirationTime (node_modules/react-dom/cjs/react-dom.development.js:13016:28)\n    at finishClassComponent (node_modules/react-dom/cjs/react-dom.development.js:13213:3)\n    at updateClassComponent (node_modules/react-dom/cjs/react-dom.development.js:13156:10)\n    at beginWork (node_modules/react-dom/cjs/react-dom.development.js:13825:14)\n    at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:15864:12)\n    at workLoop (node_modules/react-dom/cjs/react-dom.development.js:15903:24)\n    at renderRoot (node_modules/react-dom/cjs/react-dom.development.js:15943:7)\n    at performWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:16561:22)\n    at performWork (node_modules/react-dom/cjs/react-dom.development.js:16483:7)\n    at performSyncWork (node_modules/react-dom/cjs/react-dom.development.js:16455:3)\n    at requestWork (node_modules/react-dom/cjs/react-dom.development.js:16355:5)\n    at scheduleWork$1 (node_modules/react-dom/cjs/react-dom.development.js:16219:11)\n    at scheduleRootUpdate (node_modules/react-dom/cjs/react-dom.development.js:16786:3)\n    at updateContainerAtExpirationTime (node_modules/react-dom/cjs/react-dom.development.js:16813:10)\n    at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:16840:10)\n    at ReactRoot.render (node_modules/react-dom/cjs/react-dom.development.js:17123:3)\n    at /Users/travisfox/Flatiron/code/React/asynchronousRedux/redux-thunk-lab/node_modules/react-dom/cjs/react-dom.development.js:17263:14\n    at unbatchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:16680:10)\n    at legacyRenderSubtreeIntoContainer (node_modules/react-dom/cjs/react-dom.development.js:17259:5)\n    at Object.render (node_modules/react-dom/cjs/react-dom.development.js:17318:12)\n    at Object.render (node_modules/enzyme-adapter-react-16/build/ReactSixteenAdapter.js:218:50)\n    at new ReactWrapper (node_modules/enzyme/build/ReactWrapper.js:98:16)\n    at mount (node_modules/enzyme/build/mount.js:19:10)\n    at Context.<anonymous> (test/cat-list-test.js:19:21)\n    at processImmediate (internal/timers.js:458:21)",
+        "message": "Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `WrapperComponent`.",
+        "name": "Invariant Violation",
+        "framesToPop": 1
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "should return the initial state",
+      "fullTitle": "cats reducer should return the initial state",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should handle the ADD_CATS action",
+      "fullTitle": "cats reducer should handle the ADD_CATS action",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
